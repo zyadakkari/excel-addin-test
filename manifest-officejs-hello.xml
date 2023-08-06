@@ -76,7 +76,7 @@
       </bt:Images>
       <bt:Urls>
         <!-- This must point to the HTML document with the task pane -->
-        <bt:Url id="Taskpane.Url" DefaultValue="https://xlwings.github.io/officejs-helloworld/taskpane.html" />
+        <bt:Url id="Taskpane.Url" DefaultValue="https://github.com/zyadakkari/excel-addin-test/blob/main/taskpane.html" />
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="MyTab.TabLabel" DefaultValue="Hello World" />
