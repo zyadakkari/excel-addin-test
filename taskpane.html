@@ -23,7 +23,7 @@
         async function run() {
             await Excel.run(async (context) => {
                 const range = context.workbook.getSelectedRange();
-                range.format.fill.color = "yellow";
+                range.format.fill.color = "red";
                 range.load("address");
 
                 await context.sync();

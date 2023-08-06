@@ -4,7 +4,7 @@
   xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
   xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
   <!-- If you create an app based off this repo, create an own ID e.g., via https://www.guidgen.com -->
-  <Id>30d26041-7292-4d19-bd05-32c541f3c381</Id>
+  <Id>bb77ca2d-ffc1-4d96-9cdb-b89bd6865784</Id>
   <Version>1.0.0</Version>
   <ProviderName>Zoomer Analytics GmbH</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
