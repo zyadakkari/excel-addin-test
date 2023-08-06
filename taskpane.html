@@ -25,13 +25,23 @@
                 const range = context.workbook.getSelectedRange();
                 range.format.fill.color = "red";
                 range.load("address");
-
+                range.load("values");
                 await context.sync();
 
-                const sheets = context.workbook.worksheets;
-                sheets.getItem("Sheet1").getRange("A1").values = [["The selected address was " + range.address + "."]];
+                const cellValue = range.values[0][0]; // Get the value from the selected cell
+
+                // Construct the URL using the cell value
+                const url = "https://www.amazon.co.uk/dp/" + cellValue;
+
+                // Get the adjacent cell and set its value to the constructed URL
+                const adjacentCell = range.offset(0, 1); // Offset by 0 rows and 1 column to get the cell next to the selected cell
+                adjacentCell.values = [[url]];
+
+                // Now the constructed URL will be printed in the cell next to the selected cell.
             });
         }
+
+
 
     </script>
 </body>
